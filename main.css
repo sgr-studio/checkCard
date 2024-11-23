@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap');
+
+*, ::before, ::after {
+    font-family: "Noto Sans JP", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    padding: 0;
+    margin: 0;
+    word-break: keep-all;
+}
+
+body {
+    overflow: hidden;
+}
+
+#pass,#signup {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://64.media.tumblr.com/91a02c7ede3b1ac0baf55f35f2ab6dc5/tumblr_nja9a04ILY1sdfx67o1_500.gif);
+    background-position: top center;
+    background-size: 200%;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+#pass div, #signup div {
+    max-width: 300px;
+    min-width: 130px;
+    height: 200px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    top: calc(50vh - 100px);
+    background-color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px black;
+}
+
+#signup div h3, #pass div h3 {
+    font-size: 25px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+#pass div input, #signup div input {
+    background-color: #e2e2e2;
+    border: 0;
+    padding: 5px;
+    font-size: 18px;
+    display: flex;
+    width: calc(100% - 20px);
+    margin: 0 auto;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(201, 201, 201) inset;
+}
+
+#signup button, #pass button {
+    background-color: rgb(121, 216, 248);
+    font-weight: 800;
+    border: none;
+    padding: 5px;
+    margin: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.h {
+    height: 60px;
+    background-color: red;
+}
