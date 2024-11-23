@@ -20,7 +20,6 @@ function signup() {
     let psd = document.getElementById("psd");
     localStorage.setItem("psd",psd.value);
     localStorage.setItem("actid",actid.value);
-    localStorage.setItem("autologin",true);
     window.location.reload();
 }
 
